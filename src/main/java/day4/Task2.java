@@ -45,11 +45,18 @@ public class Task2 {
         int sum = 0;
 
         for (int i : array) {
-            if (String.valueOf(i).endsWith("0")) {
+            if ((i % 10) == 0) {
                 sum += i;
                 number++;
             }
         }
+
+     /*   for (int i : array) {
+            if (String.valueOf(i).endsWith("0")) {
+                sum += i;
+                number++;
+            }
+        } */
         System.out.println("Количество элементов массива, оканчивающихся на 0: " + number);
         System.out.println("Сумма элементов массива, оканчивающихся на 0: " + sum);
     }

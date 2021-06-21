@@ -7,7 +7,7 @@ public class Task1 {
         String nameOfTown;
         Scanner scanner = new Scanner(System.in);
 
-        do {
+        while (true) {
             nameOfTown = scanner.nextLine();
             if (nameOfTown.equals("Stop"))
                 break;
@@ -36,7 +36,7 @@ public class Task1 {
                 default:
                     System.out.println("Неизвестная страна");
             }
-        } while (true);
+        }
 
         scanner.close();
     }

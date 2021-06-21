@@ -1,5 +1,7 @@
 package day5;
 
+import static java.lang.Math.abs;
+
 public class Motorcycle {
     private int year;
     private String model;
