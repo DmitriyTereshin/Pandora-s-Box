@@ -28,11 +28,10 @@ public class Teacher {
     }
 
     public void evaluate(Student student) {
-        int grade;
         String gradeLine = "";
         Random random = new Random();
 
-        grade = random.nextInt(4) + 2;
+        int grade = random.nextInt(4) + 2;
 
         switch (grade) {
             case 2:
@@ -47,6 +46,8 @@ public class Teacher {
             case 5:
                 gradeLine = "Отлично";
                 break;
+            default:
+                gradeLine = "Неудовлитворительно";
         }
 
         System.out.println("Преподаватель " + this.getName() + " оценил студента с именем " + student.getName() + " по предмету " + this.subject + " на оценку " + gradeLine);
